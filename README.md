@@ -37,7 +37,7 @@ No messages.
 
 ```haiku
 Parallelogram
-I tried to cut from paper
+I tried to cut from my fabric
 I cut a rhombus
 ```
 ~~~
