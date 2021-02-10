@@ -63,13 +63,13 @@ I cut a rhombus
 
 \`\`\`haiku
 Parallelogram
-I tried to cut to from paper
+I tried to cut from my fabric
 I cut a rhombus
 \`\`\`
     `);
     return lint.then(vFile => {
       expect(vFile.messages.length).toBe(1);
-      expect(vFile.messages[0].message).toBe('"I tried to cut to from paper" (8), it should have 7 syllables.');
+      expect(vFile.messages[0].message).toBe('"I tried to cut from my fabric" (8), it should have 7 syllables.');
     });
   });
 });

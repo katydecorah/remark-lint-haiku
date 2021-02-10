@@ -45,5 +45,5 @@ I cut a rhombus
 #### Output
 
 ```
-3:1-7:4: "I tried to cut to from paper" (8), it should have 7 syllables.
+3:1-7:4: "I tried to cut from my fabric" (8), it should have 7 syllables.
 ```
