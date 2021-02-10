@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-haiku",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A remark-lint plugin to assert haiku is in 5, 7, 5 syllable pattern",
   "main": "index.js",
   "scripts": {
