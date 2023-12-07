@@ -74,4 +74,17 @@ I cut a rhombus
       );
     });
   });
+
+  test("skips non-haiku", () => {
+    const lint = processMarkdown(dedent`
+# Title
+
+\`\`\`yaml
+test: data
+\`\`\`
+    `);
+    return lint.then((vFile) => {
+      expect(vFile.messages.length).toBe(0);
+    });
+  });
 });
