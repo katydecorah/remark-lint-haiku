@@ -1,6 +1,6 @@
-const rule = require("unified-lint-rule");
-const visit = require("unist-util-visit");
-const syllable = require("syllable");
+import { lintRule } from "unified-lint-rule";
+import { visit } from "unist-util-visit";
+import { syllable } from "syllable";
 
 const pattern = [5, 7, 5];
 
@@ -31,4 +31,4 @@ function lintHaiku(ast, file) {
   visit(ast, ["code"], check);
 }
 
-module.exports = rule("remark-lint:haiku", lintHaiku);
+export default lintRule("remark-lint:haiku", lintHaiku);

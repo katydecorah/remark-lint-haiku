@@ -3,34 +3,26 @@
   "version": "0.2.0",
   "description": "A remark-lint plugin to assert haiku is in 5, 7, 5 syllable pattern",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint .",
-    "pretest": "npm run lint",
-    "format": "prettier --write '**/*.{js,json}'"
+    "pretest": "npm run lint"
   },
   "author": "Katy DeCorah",
   "license": "MIT",
   "devDependencies": {
-    "dedent": "^0.7.0",
-    "eslint": "^7.19.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^5.0.9",
-    "jest": "^26.6.3",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0",
-    "remark": "^13.0.0"
+    "dedent": "^1.5.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "remark": "^15.0.1"
   },
   "dependencies": {
-    "syllable": "^4.1.0",
-    "unified-lint-rule": "^1.0.6",
-    "unist-util-visit": "^2.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "syllable": "^5.0.1",
+    "unified-lint-rule": "^2.1.2",
+    "unist-util-visit": "^5.0.0"
   },
   "keywords": [
     "remark-lint"
